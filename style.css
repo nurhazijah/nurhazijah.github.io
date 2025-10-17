@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f5f9;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* HEADER */
+header {
+  background-color: #a2d2ff;
+  color: #03396c;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #0077b6;
+  border-left: 5px solid #0077b6;
+  padding-left: 10px;
+}
+
+/* ABOUT */
+.about p {
+  line-height: 1.6;
+}
+
+/* UPLOAD FOTO */
+.upload-section {
+  margin-top: 20px;
+  background: #f9fcff;
+  border: 1px solid #dce3ea;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.upload-section h3 {
+  color: #023e8a;
+  margin-top: 0;
+}
+
+.upload-section input[type="file"] {
+  margin-top: 10px;
+}
+
+.preview {
+  margin-top: 10px;
+}
+
+.preview img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0077b6;
+  display: block;
+  margin-top: 10px;
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project {
+  border: 1px solid #dce3ea;
+  border-radius: 8px;
+  padding: 15px;
+  background: #f9fcff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #023e8a;
+}
+
+.project p {
+  font-size: 15px;
+  color: #444;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 8px;
+  background-color: #48cae4;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.project a:hover {
+  background-color: #0077b6;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #a2d2ff;
+  padding: 15px 0;
+  color: #03396c;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
