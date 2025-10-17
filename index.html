@@ -3,76 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HI, Saya Nurhaziijah</title>
+  <title>Hi, Saya Nurhazijah</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Portfolio Nurhazijah</h1>
-    <p>Junior Web Developer</p>
+    <h1> Nurhazijah</h1>
+    <p>Junior Web Developer</p></p>
   </header>
 
-  <main>
-    <section class="about">
-      <h2>Tentang Saya</h2>
-      <p>
-        Halo! Saya <b>Nurhazijah</b>, pelajar SMK jurusan Rekayasa Perangkat Lunak (RPL).
-        Saya suka membuat tampilan web yang sederhana dan mudah digunakan.
-        Saat ini saya sedang belajar HTML, CSS, untuk membuat website statis.
-      </p>
+  <section class="profile">
+    <img src="https://picsum.photos/200" alt="Foto Azizah">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah pelajar SMK dengan jurusan Rekayasa Perangkat Lunak (RPL) yang memiliki minat dalam pengembangan web.
+      Saya suka mempelajari hal baru, beradaptasi dengan cepat, dan siap untuk berkontribusi dalam dunia kerja.</p>
+  </section>
+  <section class="skills">
+    <h2>Keahlian</h2>
+    <ul>
+      <li>HTML & CSS — Dasar pembuatan tampilan web</li>
+      <li>JavaScript — Interaksi dan logika sederhana</li>
+      <li>CANVA, untuk membuat desain menarik</li>
+    </ul>
+  </section>
 
-      <!-- Bagian upload foto profil -->
-      <div class="upload-section">
-        <h3>Upload Foto Profil</h3>
-        <input type="file" id="imageUpload" accept="image/*">
-        <div class="preview">
-          <img id="previewImage" src="" alt="hazijah.png" style="display:none;">
-        </div>
-      </div>
-    </section>
+  <section class="projects">
+    <h2>Projek</h2>
+    <div class="project-card">
+      <h3>Website Toko Baju Murah </h3>
+      <p>Website pribadi yang menampilkan beberapa produk di website statis. Dibuat dengan HTML dan CSS.</p>
+    </div>
+    <div class="project-card">
+      <h3>Aplikasi CRUD</h3>
+      <p>Aplikasi sederhana untuk menambah, mengedit, dan menghapus data menggunakan HTML, CSS, dan JavaScript.</p>
+    </div>
+  </section>
 
-    <section class="projects">
-      <div class="project">
-        <h3>Website Sekolah</h3>
-        <p>
-          Website sederhana yang menampilkan profil sekolah, galeri, dan informasi akademik.
-          Dibuat menggunakan HTML dan CSS dengan desain responsif.
-        </p>
-        <a href="#" target="_blank">Lihat Proyek</a>
-      </div>
-
-      <div class="project">
-        <h3>Aplikasi CRUD</h3>
-        <p>
-          Aplikasi CRUD sederhana untuk latihan membuat, melihat, mengedit, 
-          dan menghapus data. Dibuat menggunakan HTML, CSS,
-          dan JavaScript agar lebih mudah dipahami oleh pemula.
-        </p>
-        <a href="#" target="_blank">Lihat Proyek</a>
-      </div>
-    </section>
-  </main>
+  <section class="contact">
+    <h2>Kontak</h2>
+    <p>Email: <a href="mailto:azizah@example.com">hazizahnur088@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
+  </section>
 
   <footer>
-    © Portfolio Nurhazijah
+    <p>© 2025 Azizah | Portofolio Praktik Kerja Lapangan</p>
   </footer>
-
-  <!-- JavaScript untuk menampilkan preview gambar -->
-  <script>
-    const imageUpload = document.getElementById('imageUpload');
-    const previewImage = document.getElementById('previewImage');
-
-    imageUpload.addEventListener('change', function() {
-      const file = this.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-          previewImage.src = e.target.result;
-          previewImage.style.display = 'block';
-        }
-        reader.readAsDataURL(file);
-      }
-    });
-  </script>
 </body>
 </html>
