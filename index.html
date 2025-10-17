@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Nurhazijah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Portfolio Nurhazijah</h1>
+    <p>Pelajar SMK • Junior Web Developer</p>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>Tentang Saya</h2>
+      <p>
+        Halo! Saya <b>Nurhazijah</b>, pelajar SMK jurusan Rekayasa Perangkat Lunak (RPL).
+        Saya suka membuat tampilan web yang sederhana dan mudah digunakan.
+        Saat ini saya sedang belajar HTML, CSS, untuk membuat website statis.
+      </p>
+
+      <!-- Bagian upload foto profil -->
+      <div class="upload-section">
+        <h3>Upload Foto Profil</h3>
+        <input type="file" id="imageUpload" accept="image/*">
+        <div class="preview">
+          <img id="previewImage" src="" alt="hazijah.png" style="display:none;">
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="project">
+        <h3>Website Sekolah</h3>
+        <p>
+          Website sederhana yang menampilkan profil sekolah, galeri, dan informasi akademik.
+          Dibuat menggunakan HTML dan CSS dengan desain responsif.
+        </p>
+        <a href="#" target="_blank">Lihat Proyek</a>
+      </div>
+
+      <div class="project">
+        <h3>Aplikasi CRUD Data Siswa</h3>
+        <p>
+          Aplikasi web untuk menambah, melihat, mengedit, dan menghapus data siswa.
+          Menggunakan HTML dan sedikit JavaScript untuk interaksi dasar.
+        </p>
+        <a href="#" target="_blank">Lihat Proyek</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Azizah • Dibuat dengan HTML & CSS 💙
+  </footer>
+
+  <!-- JavaScript untuk menampilkan preview gambar -->
+  <script>
+    const imageUpload = document.getElementById('imageUpload');
+    const previewImage = document.getElementById('previewImage');
+
+    imageUpload.addEventListener('change', function() {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          previewImage.src = e.target.result;
+          previewImage.style.display = 'block';
+        }
+        reader.readAsDataURL(file);
+      }
+    });
+  </script>
+</body>
+</html>
